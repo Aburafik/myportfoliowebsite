@@ -106,7 +106,7 @@ class _ProfileViewState extends State<ProfileView> {
           onPressed: () {
             launchURL(
                 url:
-                    "https://drive.google.com/file/d/17KradQqZ3rF-zxMBet6Sc-37nk33vx4G/view?usp=sharing");
+                    "https://drive.google.com/file/d/1fAE_8kN1I2npgybG97bd4K_Va8DVfQQj/view?usp=sharing");
           }),
     );
   }
