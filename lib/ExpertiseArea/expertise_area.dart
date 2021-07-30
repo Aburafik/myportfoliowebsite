@@ -26,13 +26,16 @@ class ExpertiseArea extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 expertiseCard(
-                    icon: Icons.phone_android, title: "FLUTTER DEVELOPER"),
+                    icon: Icons.phone_android,
+                    value: 60,
+                    title: "FLUTTER DEVELOPER"),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 10),
                   child: expertiseCard(
-                      icon: Icons.computer, title: "WEB DEVELOPER"),
+                      icon: Icons.computer, value: 60, title: "WEB DEVELOPER"),
                 ),
-                expertiseCard(icon: Icons.add_link, title: "MICROSOFT SUITE"),
+                expertiseCard(
+                    icon: Icons.add_link, value: 60, title: "MICROSOFT SUITE"),
               ],
             ),
           ),
@@ -57,29 +60,29 @@ class ExpertiseArea extends StatelessWidget {
       ),
     );
   }
+}
 
-  Card expertiseCard({IconData icon, String title}) {
-    return Card(
-      elevation: 20,
-      color: Color(0xff191D28),
-      child: Container(
-        margin: EdgeInsets.all(60),
-        child: Column(
-          children: [
-            Icon(
-              icon,
-              color: commonColor,
-              size: 50,
-            ),
-            SelectableText(
-              title,
-              style: TextStyle(color: Color(0xFF8496E6), fontSize: 25),
-            ),
-          ],
-        ),
+Card expertiseCard({IconData icon, String title, value}) {
+  return Card(
+    elevation: 20,
+    color: Color(0xff191D28),
+    child: Container(
+      margin: EdgeInsets.all(value),
+      child: Column(
+        children: [
+          Icon(
+            icon,
+            color: commonColor,
+            size: 50,
+          ),
+          SelectableText(
+            title,
+            style: TextStyle(color: Color(0xFF8496E6), fontSize: 25),
+          ),
+        ],
       ),
-    );
-  }
+    ),
+  );
 }
 
 miniText(text) {

@@ -108,7 +108,7 @@ skilsProgress({String courseTitle, String level, double pecent}) {
     children: [
       skillLevel(courseTile: courseTitle, level: level),
       LinearPercentIndicator(
-        width: 350.0,
+        width: 320.0,
         lineHeight: 4.0,
         percent: pecent,
         backgroundColor: Color(0xff010101),

@@ -61,7 +61,7 @@ class FrameWorks extends StatelessWidget {
                         children: [
                           constTilte("G.TodoApp"),
                           miniText(
-                              "An App that helps keep users task in cloud- firestore")
+                              "An App that helps keep users task in the cloud")
                         ],
                       ),
                     ),
@@ -87,7 +87,7 @@ class FrameWorks extends StatelessWidget {
                       children: [
                         constTilte("Covid-App"),
                         miniText(
-                            "An App that that educate users on how to protect themselves agains the virus. the app also comes with currents updates around the world")
+                            "An App that that educate users on how to protect themselves against the virus. the app also comes with currents updates around the world")
                       ],
                     ),
                   ),

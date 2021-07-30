@@ -120,11 +120,14 @@ witness() {
   );
 }
 
-partnersLogos() {
+partnersLogos({radius}) {
   return Padding(
-    padding: const EdgeInsets.only(left: 30, top: 30),
+    padding: const EdgeInsets.only(
+      left: 30,
+      top: 30,
+    ),
     child: CircleAvatar(
-      radius: 50,
+      radius: radius,
       backgroundColor: Color(0xFF6D7283),
       child: Center(
         child: Icon(
@@ -157,9 +160,9 @@ class MyValuebleCustomers extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              partnersLogos(),
-              partnersLogos(),
-              partnersLogos(),
+              partnersLogos(radius: 50.0),
+              partnersLogos(radius: 50.0),
+              partnersLogos(radius: 50.0),
             ],
           ),
           GetInTouch()
