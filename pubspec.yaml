@@ -6,7 +6,7 @@ publish_to: "none"
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: '>=3.0.6 <4.0.0'
 
 dependencies:
   flutter:
@@ -15,7 +15,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   eva_icons_flutter: ^3.0.0
   percent_indicator: ^3.0.1
-  hover_effect: ^0.6.0
+  # hover_effect: any
+  hovering: ^1.0.4
   url_launcher: ^6.0.9
   animated_text_kit: ^4.2.1
   responsive_builder: ^0.4.1

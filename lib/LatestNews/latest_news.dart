@@ -75,7 +75,7 @@ class LatestNews extends StatelessWidget {
   }
 }
 
-storyCard({Widget widget, Widget viewMore, String image, String date}) {
+storyCard({Widget ?widget, Widget? viewMore, String ?image, String ?date}) {
   return Container(
     margin: EdgeInsets.symmetric(horizontal: 15),
     height: 350,
@@ -90,7 +90,7 @@ storyCard({Widget widget, Widget viewMore, String image, String date}) {
               // color: Colors.white,
               decoration: BoxDecoration(
                   image: DecorationImage(
-                      fit: BoxFit.cover, image: AssetImage(image))),
+                      fit: BoxFit.cover, image: AssetImage(image!))),
             ),
             SizedBox(
               height: 30,
@@ -115,7 +115,7 @@ storyCard({Widget widget, Widget viewMore, String image, String date}) {
                   child: RotatedBox(
                     quarterTurns: 135,
                     child: Text(
-                      date,
+                      date!,
                       style: TextStyle(color: Colors.grey),
                     ),
                   ),

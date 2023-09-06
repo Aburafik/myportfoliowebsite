@@ -51,8 +51,8 @@ class _HomePageState extends State<HomePage> {
 }
 
 class Pages {
-  Widget title;
-  Widget views;
+  Widget? title;
+  Widget ?views;
   Pages({this.title, this.views});
 }
 
@@ -77,7 +77,7 @@ List<Pages> pageviews = [
       views: ExpertiseArea()),
   Pages(
       title: Text(
-        "FEATURED WORKKS",
+        "FEATURED WORKS",
         style: navStyle,
       ),
       views: FrameWorks()),

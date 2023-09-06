@@ -32,9 +32,9 @@ class FrameWorks extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        constTilte("ChopDeMic"),
+                        constTilte("D Music Player"),
                         miniText(
-                            "An enternmaint and vote app for a popular tv show called CHOP DE MIC on Sagani TV: It is still under development")
+                            "A music player app built with flutter for entertainment,the app fetches the playlists from Api")
                       ],
                     ),
                   ),
@@ -47,9 +47,9 @@ class FrameWorks extends StatelessWidget {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          constTilte("Weather App"),
+                          constTilte("Green Ghana App"),
                           miniText(
-                              "An App that gives a user the current weather condition base on his search")
+                              "A Re-designed of the Green Ghana app, the app helps individuals and organizations to upload planted trees to a remote location, and also keep track of trees planted")
                         ],
                       ),
                     ),
@@ -59,9 +59,9 @@ class FrameWorks extends StatelessWidget {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          constTilte("G.TodoApp"),
+                          constTilte("FeedHub"),
                           miniText(
-                              "An App that helps keep users task in the cloud")
+                              "An app that helps people to donate food to the needy and NGos")
                         ],
                       ),
                     ),
@@ -74,9 +74,9 @@ class FrameWorks extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        constTilte("G.Artisan"),
+                        constTilte("Ilm Online"),
                         miniText(
-                            "An App that connect artisans to the general public")
+                            "An App tha helps users to learn Islamic knowledge at the comfort of theie homes")
                       ],
                     ),
                   ),
@@ -120,7 +120,7 @@ projectType() {
   );
 }
 
-addMore({Widget child, Color color}) {
+addMore({Widget? child, Color? color}) {
   return Container(
     padding: EdgeInsets.symmetric(horizontal: 10),
     height: 330,
@@ -132,7 +132,7 @@ addMore({Widget child, Color color}) {
   );
 }
 
-smallProjects({Widget child}) {
+smallProjects({Widget? child}) {
   return Container(
     padding: EdgeInsets.symmetric(horizontal: 10),
     color: Color(0xff191D28),

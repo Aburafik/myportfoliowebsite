@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import 'homePage.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(
+    MyApp(),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -11,8 +13,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Raf Portfolio website',
-      theme: ThemeData(primaryColor: Color(0xff555B72)),
+      title: 'Raf',
+      theme: ThemeData(
+        primaryColor: Color(0xff555B72),
+      ),
       home: HomePage(),
     );
   }

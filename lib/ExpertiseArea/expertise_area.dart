@@ -62,7 +62,7 @@ class ExpertiseArea extends StatelessWidget {
   }
 }
 
-Card expertiseCard({IconData icon, String title, value}) {
+Card expertiseCard({IconData? icon, String? title, value}) {
   return Card(
     elevation: 20,
     color: Color(0xff191D28),
@@ -75,8 +75,9 @@ Card expertiseCard({IconData icon, String title, value}) {
             color: commonColor,
             size: 50,
           ),
+          SizedBox(height: 15),
           SelectableText(
-            title,
+            title!,
             style: TextStyle(color: Color(0xFF8496E6), fontSize: 25),
           ),
         ],

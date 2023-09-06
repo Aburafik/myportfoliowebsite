@@ -106,7 +106,7 @@ class _ProfileViewState extends State<ProfileView> {
           onPressed: () {
             launchURL(
                 url:
-                    "https://drive.google.com/file/d/1fAE_8kN1I2npgybG97bd4K_Va8DVfQQj/view?usp=sharing");
+                    "https://drive.google.com/file/d/1CZFGnT8M8z-_1eeJSmYL7sv-TGxVNPCY/view?usp=drive_link");
           }),
     );
   }
@@ -231,12 +231,12 @@ socalMediahandels() {
   );
 }
 
-socialMediaIcons({icon, Function onpress}) {
+socialMediaIcons({icon, Function()? onpress}) {
   return Padding(
     padding: const EdgeInsets.all(8.0),
     child: IconButton(
       hoverColor: Colors.white,
-      onPressed: onpress,
+      onPressed: onpress!,
       icon: Icon(icon),
       color: Color(0xffADB1BD),
     ),

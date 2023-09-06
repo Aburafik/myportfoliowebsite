@@ -102,7 +102,7 @@ class AbouPage extends StatelessWidget {
 }
 
 ///Skillls progress bars
-skilsProgress({String courseTitle, String level, double pecent}) {
+skilsProgress({String ?courseTitle, String? level, double ?pecent}) {
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [
@@ -110,7 +110,7 @@ skilsProgress({String courseTitle, String level, double pecent}) {
       LinearPercentIndicator(
         width: 320.0,
         lineHeight: 4.0,
-        percent: pecent,
+        percent: pecent!,
         backgroundColor: Color(0xff010101),
         progressColor: commonColor,
       ),
@@ -125,15 +125,15 @@ levelText(String text) {
   );
 }
 
-skillLevel({String courseTile, String level}) {
+skillLevel({String? courseTile, String? level}) {
   return Container(
     padding: EdgeInsets.symmetric(vertical: 15, horizontal: 10),
     width: 300,
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        levelText(courseTile),
-        levelText(level),
+        levelText(courseTile!),
+        levelText(level!),
       ],
     ),
   );
@@ -197,7 +197,7 @@ buttonLine() {
   );
 }
 
-commonButton({Widget title}) {
+commonButton({Widget? title}) {
   return MaterialButton(
       color: commonColor,
       child: Container(
